@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #080c14;
+    color: #f1f5f9;
+    min-height: 100vh;
+    /* Prevent horizontal overflow while ensuring vertical scrolling works cleanly */
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+.font-mono-code {
+  font-family: 'Space Grotesk', monospace;
+}
+
+/* Glass UI XXI Styling */
+.xxi-glass {
+  background: rgba(15, 23, 42, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(197, 160, 89, 0.3);
+}
+
+.xxi-glass-card {
+  background: #0f172a;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.xxi-gold-gradient {
+  background: linear-gradient(135deg, #c5a059 0%, #e1bd7a 50%, #8e6c2d 100%);
+}
+
+.xxi-gold-text {
+  background: linear-gradient(135deg, #f3e8c8 0%, #c5a059 50%, #e1bd7a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Mobile Touch Scrollbar Fix & Anti-Lag Hardware Acceleration */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #080c14;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #c5a059;
+}
+
+/* Smooth Touch Scrolling on iOS */
+.touch-scroll {
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+}
+
+/* Hardware accelerated transitions for snappy smooth UI */
+button, a, input, select, textarea {
+  touch-action: manipulation;
+}
+

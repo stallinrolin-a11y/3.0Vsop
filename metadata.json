@@ -1,0 +1,6 @@
+{
+  "name": "Cinema XXI - VSOP Commis & Mixologist",
+  "description": "Visual Standard Operating Procedure (VSOP) Portal Cinema XXI for Commis Chef & Mixologist featuring Daily Checklist, Stock Harian, General Cleaning, Learning Files, and Mobile-Friendly Supervisor Mode.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
